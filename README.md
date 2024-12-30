@@ -29,6 +29,8 @@ Mở rộng từ hệ thống chăm sóc cây trồng nhỏ lẻ đến quy mô 
 Tích hợp nhiều công nghệ hiện đại như cảm biến môi trường, điều khiển tự động, và AI.  
 Tạo ra một hệ sinh thái nông nghiệp thông minh, hướng tới nông nghiệp bền vững. 
 # Sơ đồ khối: 
+![fine](https://github.com/user-attachments/assets/c464d6de-3812-432d-a3aa-36d60c20f0df)
+
 # Kết quả dự án: 
 # Giao diện Node-RED: 
 ![flow-red](https://github.com/user-attachments/assets/ae685111-0cbe-4c55-a5ad-ee4d654bd77c)
@@ -59,13 +61,19 @@ Tạo ra một hệ sinh thái nông nghiệp thông minh, hướng tới nông 
 -Khi tới cửa sẽ có bóng đèn tự động sử dụng cảm biến vật cản hồng ngoại để phát hiện người. 
 https://github.com/user-attachments/assets/503c1f3f-20c8-421c-98fe-cd02e8e25bc9 
 
-- Mô phỏng việc cửa mở tự động dùng thẻ RFID và servo trong trường hợp nhân viên là đúng người.
+- Mô phỏng việc cửa mở tự động dùng thẻ RFID và servo trong trường hợp nhân viên là đúng người, đồng thời hiển thị lên LCD. 
 https://github.com/user-attachments/assets/dc65d5bc-fa84-47f3-92f7-50e4967ddfae
 
 - Đây là mô phỏng việc nhân viên không hợp lệ:
 https://github.com/user-attachments/assets/9d65b00c-0991-4b4d-995a-6c8ca7190bed
 -Mô phỏng việc dùng quang trở để cung cấp ánh sáng trong những ngày thiếu nắng trong nông trại: 
 https://github.com/user-attachments/assets/1b17de9a-a663-496d-bf59-f6eacbe1f0eb
+# Kết luận: 
+- Việc làm việc trong dự án này giúp em rèn luyện tính độc lập và quyết đoán trong công việc do là project cá nhân.
+- Học thêm về kiến thức về giao thức MQTT, Node RED, Git,..
+- Rèn luyện thêm về kĩ năng code
+- Tuy nhiên, do thiếu sót về kinh nghiệm nên trong dự án này không tránh khỏi nhiều thiếu sót, bản thân việc em có thể nghĩ ra thêm khá nhiều tính năng nhưng chỉ có khả năng tạm thời thực hiện 1 số các ý tưởng đó, các ý tưởng còn lại chưa phát triển vào dự án.
+- Dù vậy, em mong muốn có cơ hội phát triển bản thân và cơ hội ngành nghề trong tương lai.
 
 
 
