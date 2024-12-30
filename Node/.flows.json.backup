@@ -1,0 +1,1313 @@
+[
+    {
+        "id": "fd5bd47981fc67ea",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "041828102f0c4603",
+        "type": "junction",
+        "z": "fd5bd47981fc67ea",
+        "x": 120,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e44731f0b51408a1",
+        "type": "junction",
+        "z": "fd5bd47981fc67ea",
+        "x": 100,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10bf30fcaeb1e0a5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "412e08cd926e4a4fb9875fe7c53dda78.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "412e08cd926e4a4fb9875fe7c53dda78.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "15",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "broker_id",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "your_broker_address",
+        "port": "1883",
+        "clientid": "Node-RED",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ce15458987d839a7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#216e22",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#216e22",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#216e22",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#33a934",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#216e22",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "46a4a8557a5c24ae",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "",
+        "order": 12,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a9affa0b259d1d4e",
+        "type": "ui_group",
+        "name": "Các thông số trong vườn",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4d4ee7fa0b434e61",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7eea2dee1a950cc1",
+        "type": "ui_tab",
+        "name": "Smart Farm",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "327cdd518e33d59a",
+        "type": "ui_group",
+        "name": "Indoor Indicators",
+        "tab": "7eea2dee1a950cc1",
+        "order": 1,
+        "disp": true,
+        "width": 19,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b90a974965714911",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "3420b4c812a3003c",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9075148a3dc8cc3f",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "a83a9d55bee1e051",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0e0a5e2b4172e959",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 10,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "e415dc4102cf0558",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 11,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "5ca0a9fbafeba66a",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4b02478e04e635ee",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 15,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "6ad5b5f3e4890c56",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 16,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "12d4e094b0f296d7",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 17,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "cbfb3e5fc45f2ba2",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "a9affa0b259d1d4e",
+        "order": 18,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "group1",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7111b3ed96c8ac72",
+        "type": "ui_tab",
+        "name": "Gate",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "87613eb6802a568f",
+        "type": "ui_group",
+        "name": "User list",
+        "tab": "7111b3ed96c8ac72",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "96db0ae714e62bc4",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "89352d3baeb8daea",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "15b284e87dea3a1d",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a52d3da30858fb59",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fb417d23f4b7a5f4",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9a37d5b527a73523",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 15,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "b084822b2cd2e180",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 16,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "69966ac91a466db6",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 17,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "6336126a975f92a2",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "327cdd518e33d59a",
+        "order": 18,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "eb03be7c.61fcb",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "mqtt://localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "esp32/lwt",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "ESP32 disconnected unexpectedly."
+    },
+    {
+        "id": "ea7a1e99.8f25f8",
+        "type": "ui_group",
+        "name": "User List",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "dc91b1b7.465de8",
+        "type": "ui_group",
+        "name": "Time Display",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "37a2054c86f9f56c",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "mqtt://localhost:1883",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willPayload": "",
+        "userProps": {}
+    },
+    {
+        "id": "6e5ee975387f1f01",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "mqtt://localhost:1883",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willPayload": "",
+        "userProps": {}
+    },
+    {
+        "id": "b0ab283d.91b8f",
+        "type": "ui_group",
+        "name": "User Access Info",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b8c8b7f2.d7d218",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "mqtt://localhost",
+        "port": "1883",
+        "clientid": "NodeRED",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": ""
+    },
+    {
+        "id": "bbafdd4f.342d18",
+        "type": "ui_group",
+        "name": "User Info",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "dd2b15da3c898321",
+        "type": "ui_group",
+        "name": "User Data",
+        "tab": "9f645067c285d4c2",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "81e506e465870964",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "87613eb6802a568f",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "809fd0e325ba04cb",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "87613eb6802a568f",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "954f9afaaf1a6d22",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "87613eb6802a568f",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "8bbfe53d58c81683",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "87613eb6802a568f",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f343e934e4f8f402",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "87613eb6802a568f",
+        "order": 8,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "05e10f0f3ae095a1",
+        "type": "ui_spacer",
+        "z": "fd5bd47981fc67ea",
+        "name": "spacer",
+        "group": "87613eb6802a568f",
+        "order": 9,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "8254f50e8be92baa",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/soil",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 20,
+        "wires": [
+            [
+                "b0eb9dbf06855b73",
+                "959955213e9c6e8a",
+                "cece9aba472824db"
+            ]
+        ]
+    },
+    {
+        "id": "cece9aba472824db",
+        "type": "debug",
+        "z": "fd5bd47981fc67ea",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "58e2a96e2c6e7ede",
+        "type": "mqtt out",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10bf30fcaeb1e0a5",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "da25aea6e8b747fd",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/status",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 510,
+        "y": 520,
+        "wires": [
+            [
+                "d0adbcb0223292df"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_out",
+        "type": "mqtt out",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "topic": "esp32/mode",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10bf30fcaeb1e0a5",
+        "x": 830,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "manual_enable",
+        "type": "change",
+        "z": "fd5bd47981fc67ea",
+        "name": "Enable Manual Control",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "$$.payload = 'MANUAL'",
+                "tot": "jsonata"
+            }
+        ],
+        "x": 760,
+        "y": 20,
+        "wires": [
+            [
+                "manual_switch",
+                "ui_led_switch"
+            ]
+        ]
+    },
+    {
+        "id": "mode_dropdown",
+        "type": "ui_dropdown",
+        "z": "fd5bd47981fc67ea",
+        "name": "Mode Selector",
+        "label": "Mode",
+        "tooltip": "Switch between AUTO and MANUAL",
+        "place": "",
+        "group": "327cdd518e33d59a",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "AUTO",
+                "value": "AUTO",
+                "type": "str"
+            },
+            {
+                "label": "MANUAL",
+                "value": "MANUAL",
+                "type": "str"
+            }
+        ],
+        "topic": "esp32/mode",
+        "topicType": "str",
+        "className": "",
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "mqtt_out",
+                "manual_enable"
+            ]
+        ]
+    },
+    {
+        "id": "manual_switch",
+        "type": "ui_switch",
+        "z": "fd5bd47981fc67ea",
+        "name": "Manual Pump Control",
+        "label": "Pump (Manual)",
+        "tooltip": "Control pump in manual mode",
+        "group": "327cdd518e33d59a",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "esp32/relay",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "58e2a96e2c6e7ede",
+                "mqtt_out"
+            ]
+        ]
+    },
+    {
+        "id": "d0adbcb0223292df",
+        "type": "ui_text",
+        "z": "fd5bd47981fc67ea",
+        "group": "327cdd518e33d59a",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Pump Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 850,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b0eb9dbf06855b73",
+        "type": "ui_gauge",
+        "z": "fd5bd47981fc67ea",
+        "name": "Soil humidity",
+        "group": "327cdd518e33d59a",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Soil humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 270,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "959955213e9c6e8a",
+        "type": "ui_chart",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "group": "327cdd518e33d59a",
+        "order": 13,
+        "width": 6,
+        "height": 4,
+        "label": "Soil humidity chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Soil humidity",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 210,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1266ff7d342ba39c",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "Light Sensor",
+        "topic": "esp32/light",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": true,
+        "inputs": 0,
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "69f536dce136f976",
+                "c2e7c6706c608549"
+            ]
+        ]
+    },
+    {
+        "id": "f18131ab9cde78c0",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "LED Status",
+        "topic": "esp32/led",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 510,
+        "y": 440,
+        "wires": [
+            [
+                "45acb9bd3d97fef4"
+            ]
+        ]
+    },
+    {
+        "id": "dda5ec0e79ee66a4",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "RFID User",
+        "topic": "esp32/rfid_user",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 60,
+        "y": 320,
+        "wires": [
+            [
+                "84dc166c8cb216f2"
+            ]
+        ]
+    },
+    {
+        "id": "69f536dce136f976",
+        "type": "ui_gauge",
+        "z": "fd5bd47981fc67ea",
+        "name": "Light Intensity",
+        "group": "327cdd518e33d59a",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "compass",
+        "title": "Light Intensity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 280,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "45acb9bd3d97fef4",
+        "type": "ui_text",
+        "z": "fd5bd47981fc67ea",
+        "group": "327cdd518e33d59a",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "name": "LED Status",
+        "label": "LED Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 830,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ui_led_switch",
+        "type": "ui_switch",
+        "z": "fd5bd47981fc67ea",
+        "name": "LED Control",
+        "label": "LED",
+        "tooltip": "",
+        "group": "327cdd518e33d59a",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "esp32/led",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "mqtt_led_control",
+                "mqtt_out"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_led_control",
+        "type": "mqtt out",
+        "z": "fd5bd47981fc67ea",
+        "name": "Control LED",
+        "topic": "esp32/led",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10bf30fcaeb1e0a5",
+        "x": 830,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c2e7c6706c608549",
+        "type": "ui_chart",
+        "z": "fd5bd47981fc67ea",
+        "name": "",
+        "group": "327cdd518e33d59a",
+        "order": 14,
+        "width": 6,
+        "height": 4,
+        "label": "Light chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Soil humidity",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "84dc166c8cb216f2",
+        "type": "function",
+        "z": "fd5bd47981fc67ea",
+        "name": "Extract User and Time",
+        "func": "let message = msg.payload;\nlet userName = message.match(/User: (\\w+)/)[1];\nlet currentTime = new Date().toLocaleString();\nmsg.payload = {\n    user: userName,\n    time: currentTime\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 320,
+        "wires": [
+            [
+                "1846be21d5c13bea"
+            ]
+        ]
+    },
+    {
+        "id": "1846be21d5c13bea",
+        "type": "ui_template",
+        "z": "fd5bd47981fc67ea",
+        "group": "87613eb6802a568f",
+        "name": "Display User Info",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "format": "<h3>User: {{msg.payload.user}}</h3>\n<p>Accessed at: {{msg.payload.time}}</p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 370,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "566596a1c3bd27ec",
+        "type": "ui_switch",
+        "z": "fd5bd47981fc67ea",
+        "name": "Gate Light",
+        "label": "Gate Light",
+        "tooltip": "",
+        "group": "87613eb6802a568f",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "esp32/gatelight",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 75,
+        "y": 443.33331298828125,
+        "wires": [
+            [
+                "996d875b6a558ba7"
+            ]
+        ]
+    },
+    {
+        "id": "996d875b6a558ba7",
+        "type": "mqtt out",
+        "z": "fd5bd47981fc67ea",
+        "name": "Control LED",
+        "topic": "esp32/gatelight",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "10bf30fcaeb1e0a5",
+        "x": 290,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e5416d4db4040296",
+        "type": "mqtt in",
+        "z": "fd5bd47981fc67ea",
+        "name": "Gate light Status",
+        "topic": "esp32/gatelight",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "10bf30fcaeb1e0a5",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 80,
+        "y": 500,
+        "wires": [
+            [
+                "edac92d0330cc31c"
+            ]
+        ]
+    },
+    {
+        "id": "edac92d0330cc31c",
+        "type": "ui_text",
+        "z": "fd5bd47981fc67ea",
+        "group": "87613eb6802a568f",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "Gate light Status",
+        "label": "Gate light Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 310,
+        "y": 500,
+        "wires": []
+    }
+]
